@@ -1,0 +1,71 @@
+// operaciones aritméticas
+
+// sumas 
+var n1 : Float = 10.51
+var n2 : Float = 85  
+var n3 : Float = -6
+var n4 : Float = 6.36
+var n5 : Float = -4.99
+
+// se realiza la suma directamente a la hora de imprimir
+print("La suma de n1, n2, n3, n4, n5: \(n1+n2+n3+n4+n5)")
+/* la segunda manera es declarar una nueva variable que contenga los datos que queremos sumar */
+var suma : Float = (n1+n2+n3+n4+n5)
+print("La suma de n1, n2, n3, n4, n5: \(suma)")
+
+// Resta
+print()
+print("La resta de n1, n2, n3, n4, n5: \(n1-n2-n3-n4-n5)")
+var resta : Float = (n1-n2-n3-n4-n5)
+print("La resta de n1, n2, n3, n4, n5: \(resta)")
+
+// Multiplicación
+print()
+print("La multiplicación de n1, n2, n3, n4, n5: \(n1*n2*n3*n4*n5)")
+var mult : Float = (n1*n2*(n3 + 2)*(n4 - 1)*n5)
+print("La multiplicación de n1, n2, n3, n4, n5: \(mult)")
+
+// División
+print()
+var div : Float = (n1/n2 - n3/n5) * (n1/n3)
+print("El resulatdo de la división es \(div)")
+
+// Conversión de tipos
+var t1 : Int = 4
+var t2 : Float = 10.2
+var t3 : Double = 15.8
+
+let en1 : Float = Float(t1)
+let fl2 : Int = Int (t2)
+let do3 : Int = Int (t3)
+
+print()
+print("Conversión de 4 a Float: \(en1)")
+print("Conversión de 10.2 a Int: \(fl2)")
+print("Conversión de 15.8 a Int: \(do3)\n")
+
+
+//Juan tiene las siguientes calificaciones, 7, 8, 9, 9, 10, 10 y quiere conocer su promedio. Ayudalo a darle su promedio del semestre realizando operaciones aritméticas básicas:
+
+var c1 : Int = 7
+var c2 : Int = 8
+var c3 : Int = 9
+var c4 : Int = 9
+var c5 : Int = 10
+var c6 : Int = 10
+
+var sm : Int = (c1+c2+c3+c4+c5+c6)
+var prom : Int = (sm/6)
+print("Su promedio del semestre es \(prom)\n")
+
+
+//Luis gana cada quincena 2,100 pesos. Luis debe de pagar renta cada mes, y demás gastos, por ejemplo: 1500 de renta al mes, 850 de comida al mes, luz, gas y agua 500 pesos al mes. ¿Con cuanto dinero se queda Luis al finalizar el mes? (Utiliza operaciones básicas para resolver el problema)
+
+var quincena = 2100
+var mes = (quincena*2)
+var rt = 1500
+var cm = 800
+var ser = 500
+
+var resto = (mes-(rt+cm+ser))
+print("Luis se queda con $\(resto) al finalizar el mes")

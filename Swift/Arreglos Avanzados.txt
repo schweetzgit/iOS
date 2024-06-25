@@ -1,0 +1,227 @@
+print ("********parte 2(código de Emily)*******")
+
+// Arreglos con incializados
+var arregloIntA: [Int] = [1,2,3,4,5]
+var arregloIntB: [Int] = [6,7,8,9,0]
+var arregloDouble:[Double] = [2.3,5.4]
+var arregloStringA:[String] = ["México", "Italia","Marruecos","Japón"]
+var ArregloStringB:[String] = ["América","Europa","África","Asía","Oceanía"]
+//Unión de arreglos de tipo String
+var arregloStringAUB = arregloStringA + ArregloStringB
+print(arregloStringAUB)
+//Unión de arreglos de tipo Int
+//No se pueden realizar arreglos de diversos tipos de dato
+//var arregloInta = arregloInt + arregloDouble
+var ArregloINTs = arregloIntA + arregloIntB
+print("Unión de arreglos")
+print(ArregloINTs)
+//Realizar arreglos de repetición
+ var ArregloRepetición = [Int](repeating:3 , count:5)
+ print("Repetición de arreglos \(ArregloRepetición)")
+
+//Posición de arreglos 
+print("Posición 1 del arregloIntA: \(arregloIntA[1])")
+//Rango de posición de arreglos
+print("Posicion 1 al 4  del arregloIntA: \(arregloIntA[1...4])")
+
+//Arreglos vacios
+print("\n\n**********   Arreglo Vacios   **********\n")
+//Declaracion de un arreglo vacio
+var arregloVacio = Set <String>()
+//
+//Para conocer el numero de elementos que existen en nuestro ar
+arregloVacio.insert("Facebook")
+arregloVacio.insert("Instagram")
+arregloVacio.insert("Twitter")
+arregloVacio.insert("Snapchat")
+arregloVacio.insert("LinkedIn")
+//imprimiendo por medio de un for
+print("Imprimir elementos del arreglo por For")
+for i in arregloVacio{
+   print("\t \(i)")
+}
+print("")
+//Imprimiendo todo los String que ha tomado el arreglo
+print("Imprimir elementos del arreglo forma sencilla ")
+print(arregloVacio)
+//Salto de linea
+print("")
+//Eliminar un espacio de memoria del arreglo con un condicional If, en el que nos imprimira, que String se esta eliminando
+print("Eliminar elemento del arreglo")
+if let eliminarRed = arregloVacio.remove("Facebook"){
+  print("La red Social \(eliminarRed) ha sido eliminada, de nuestro arreglo")
+}
+//Imprimiendo el arreglo, para laverificación del String que se ha eliminado
+print("")
+print(arregloVacio)
+// La siguiente línea podemos hacer la verificación de algun elemento del arreglo exista, nos mandará el tipo de Bool
+print("")
+
+/*
+if Bool verificacionElemento = arregloVacio.contains("Facebook"){
+  print("El elemento Facebook del arregloVacio Existe: \(verificacionElemento)")
+}*/
+//Vaciar el arreglo en 0 elementos
+arregloVacio.removeAll()
+print("Número de elementos del arregloVacio:\(arregloVacio.count)")
+
+/*****************************Set******************************/
+// Creacion de un Set vacío
+//var letra = Set()
+//La sintaxis para la creacion de un set que
+//Los Set son colecciones desordenadas de valores únicos. Los valores únicos deben ser del mismo tipo.
+
+// Sintaxis para la declaración de un Set  es la siguiente
+//Set vacío
+var compañia1 = Set<String>()
+//Set Inicializado
+var Compañia: Set = ["Amazon", "Oracle", "Google", "Intel", "IBM" ]
+
+//
+print("")
+//Count nos permite, saber cuantos elementos existen en el Set con nombre Compañia
+print("Las compañias más destacadas son: \(Compañia.count)")
+
+print()
+print("Imprimiento colección de datos de un Set")
+for (com) in Compañia{
+
+  print("Compañia: \(com)")
+}
+
+//Al agregar un nuevo elemento a un set, llamamos método insert y dentro de por medio de parentesis y comillas colocar la cadena. 
+print()
+Compañia.insert("Microsoft Azure")
+// para asegurarnos que nuestros dato fueron agregados
+print("Inserccion de elementos en un Set")
+print(Compañia)
+//
+print()
+// La eliminación de un elemento se realiza con el metodo remove dentro de parentesis y comillas para la eliminacion de los elementos.
+if let eliminarCompañia = Compañia.remove("Intel"){
+  print("La compañia \(eliminarCompañia) se ha eliminado")
+}
+
+// O bien si queremos eliminar todos los elementos con el   método remove all.
+Compañia.removeAll()
+print("Eliminacion de todos los elementos")
+print(Compañia)
+
+//Teniendo dos Set hacer se pueden hacer la let intercesión y union entre colesion de datos
+let colores1: Set<String> = ["Negro", "Naranja", "Rosa"]
+let colores2: Set<String> = ["Azul", "Negro", "Rosa"]
+// 
+let intercesión = colores1.intersection(colores2)
+print(intercesión)
+let unión = colores1.union(colores2)
+print(unión)
+/******************************Tupla**************************************/
+/* somos tuplas*/
+// Las tuplas se crean agrupando cualquier cantidad de valores
+print("\n")
+print("************************ Tupla Swift ******************")
+let soy_tupla = ("Mark", 57, "California")
+
+// imprimir datos independientes, colocamos la palabra reservada print adentro de ella colocamos el nombre que
+//que se le proporciono a la tupla y seguida de ella un punto y la posicion de memoria que esta utiliza
+// nota: sabemos que toda estructura de datos siempre iniciará en posición cero
+print("Tupla con Valores")
+print( "Posición 0:\(soy_tupla.0)") 
+print( "Posición 1:\(soy_tupla.1)")
+print( "Posición 2:\(soy_tupla.2)")
+
+
+print()
+print("Renombrando valores dentro de una tupla")
+// Las tuplas nos permiten nombrar valores individuales dentro de ella
+// Asignamos la estructura de la tupla la palabra reservada let que es una contante seguida del nombre quee se le da a la tupla igual y entre parentesis la agrupación de 
+ let renombrar_tupla = (Institucion: "UNAM", Facultad:"FesAcatlan", Licenciaturas:18) 
+print( "Institución: \(renombrar_tupla.Institucion )")
+print( "Facultad: \(renombrar_tupla.Facultad)")
+print( "Licenciatura: \(renombrar_tupla.Licenciaturas)")
+
+print()
+print("Descomposicion de tupla")
+//Las tuplas se pueden descomponer envarias individuales
+let My_tupla = (name:"Emily", age:22)
+// declaramos una contante con la palabra reservada let que nos permita obtener los valores asignados con pronombre dentro de un parentesis con separación por coma,  igual al nombre que le dimos a nuestra tupla.
+
+let (Nombre,Edad) = My_tupla
+// De esta manera podemos descomponerla y llamar los datos de forma de una contante.
+print("Nombre: \(Nombre)")
+print("Edad: \(Edad)")
+
+
+//Para realizar un tupla inicializada es la siguiente estructura en la que tenemos 3 tipos de datos diferentes.
+var peli: (pelicula: String, year:Double, rank:Float)  = ("Sonic", 2014, 10.0)
+// Un de las propiedades que nos permiten las Tuplas es su descomposición 
+//La cual ya sea que ocupemos todos sus elementos o solo uno 
+//Ya que 
+// El operador _ que nos permite crear un placeholder o tipo vacío que el compilador ignorará.
+let (pelicula, _, _) = peli
+print("Nombre pelicula:\(pelicula)")
+
+
+print("************************ Diccionario *****************")
+print("Diccionario  con valores")
+//Diccionarios con valores 
+//Creación e inicialización de un diccionario vacio
+var Dicc_vacio: [Int: Double] = [:] 
+//otras formas de la creación de diccionarios
+var Dicc_vacio1 = Dictionary<String,Double>()
+var Dicc_vacio2 = [String : Double]()
+// Diccionario que no puede ser modificados por la declaracion de let en vez de var
+let diccionario3: Dictionary <String,String> = ["c1": "Rojo", "c2": "Amarillo"]
+// Diccionario añediendo valores directamente si incluimos  al final de la linea as [String:Any], con ello podemos introducir valores de diferentes tipos 
+var diccionario5 = ["Titulo": "La ultima lección", "pag": 989] as [String : Any]
+print()
+
+//declaramos una diccionario llamado Ciudades con una llave llamada "" y que puede contener más de 2 string
+var País: [String : [String]] = ["Ciudad":["Tokio","Ámsterdam"]]
+// Mi Diccionario con solo dos String
+print(País)
+print()
+//agregamos el dato Singapur a la llave país
+País["Ciudad"]?.append("Singapur")
+print(País)
+print()
+
+//Acceder y modificación a Diccionario
+//Hacemos la creación de un diccionario de llave de tipo de dato Int y el valor conun tipo de valor Double y le damos una asignación al diccionario
+ var Diccionario: [Int:Double] = [1: 0.25, 2: 0.50, 3: 0.75, 4: 1.00, 5: 1.25]
+ 
+//La aplicación del For para imprimir la llave valor del Diccionario, dentro de parentesis asignamos dos variables, la cual la primera es la llave y la segunda es el valor
+for (Llave, Valor) in Diccionario {
+  print("La llave: \(Llave) tiene un valor de: \(Valor)")
+}
+//Actualización ó modificación 
+//En modificar el valor de la llave 2
+print("Modificar el valor de la llave 2")
+// llamamos al diccionario con el nombre asignado dentro de corchetes en la posición deseada igual al valor requerido
+Diccionario[2] = 3.1416
+print("Realizando el ciclo For modificados")
+// Realizaremos el ciclo for 
+for (Llave,Valor) in Diccionario {
+  print("La llave :\(Llave) tiene un valor de :\(Valor)")
+}
+
+print()
+//Creación de un Array a partir de un diccionario
+print("Creación de un Array en el diccionario")
+// utilizando el diccionario que hemos estando utilizando con tipo de dato Int como llave y el tipo de dato Double
+//crearemos un variable con se llamara Llave
+var llave = Array(Diccionario.keys)
+// ensegida
+//
+for i in llave{
+  print("Nombre de la llave:\(i)")
+}
+//
+print()
+print("Eliminacion de llave : valor del Diccionario")
+var Diccionario1 :Dictionary <String,String> = ["Placa1": "abc55","Placa2": "abc56","Placa3": "abc89", "Placa4":"abc96"]
+//Llamamos al diccionario despues del punto y la palabrareservada removeValue dentrode parentesis forKey -> que es decir que llave deseamos eliminar
+Diccionario1.removeValue(forKey :"Placa1")
+for (llave,Valor) in Diccionario1{
+  print("\(llave) valor: \(Valor)")
+}

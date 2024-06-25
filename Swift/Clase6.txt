@@ -1,0 +1,105 @@
+// Actividad 1: Hacer un código de menos de 5 lineas para hacer la tabla del 10, usando cocatenación y for.
+var num : Int = 10
+for num in 1...num {
+ print("10 * \(num) = \(10*num)")
+}
+print("")
+
+// Hacer un codigo que nos diga si nuestra estatura es o no permitida para un juego
+let altura1 : Float = 1.60, altura2 : Float = 1.74
+if altura1 >= 1.60 && altura2 >= 1.60 {
+  print("Ambas personas pueden subir al juego")
+}
+else if altura1 <= 1.60 && altura2 <= 1.60{
+  print("Ninguna persona puede subir al juego")
+}
+else{
+  print("Alguno no cumple con la estatura")
+  if altura1 <= 1.60 {
+    print("La primera persona no cumple con la estatura")
+  }
+  if altura2 <= 1.60 {
+    print("La segunda persona no cumple con la estaura")
+  }
+}
+
+// Actividad 2: Elaborar un IF ELSE ANIDADO y explicar ¿qué hace su código?
+print("")
+var num1 : Int = 5, num2 : Int = 2
+if num1 == num2 {
+  print("Los numeros son iguales")
+}
+else {
+  if num1 > num2 {
+    print ("El primer número es mayor que el segundo")
+  }
+  else {
+    print ("El segundo número es mayor que el primero")
+  }
+}
+
+print("")
+let hora : Float = 15.30
+var llegada : Float = 16.00
+if hora == llegada {
+  print ("Has llegado a tiempo")
+}
+else {
+  if hora > llegada {
+   print("Has llegado temprano")
+  }
+  else {
+    print ("Has llegado tarde")
+  }
+} 
+
+// SWITCH: los componentes de son DEFAULT, CASE
+print("")
+
+print ("Escribe tu calificación")
+let entrada = readLine()!
+var dato = Int(entrada)!
+
+switch dato {
+  case 1 ... 5 : print ("Entra a clase más seguido y pon atención")
+  case 6 , 7 : print ("Debes esfrozarte un poco más")
+  case 8 , 9 : print ("Bien hecho")
+  case 10 : print ("Excelente") 
+
+  default : print ("Favor de revisar calificación con el asesor")
+}
+
+//Crear un switch con al menos 4 casos
+
+
+var musc1 : [String] = ["Better Me", "Fancy", "Error", "Loney", "I Can´t Stop Me", "Hell In Heaven", "Movie"]
+var musc2 : [String] = ["Wings", "To Be Or Not To Be", "The Chaser","Strawberry", "Only You", "Sorry", "My Beauty"]
+
+print("\n*1er Conjunto*")
+for musc1 in musc1 {
+  print(musc1)
+}
+
+print("\n*2do Conjunto*")
+for musc2 in musc2 {
+  print(musc2)
+}
+
+print("\n*Elemiento eliminado del 1er Conjunto*")
+print ("Se ha eliminado a: \(musc1[0])")
+musc1.remove(at:0)
+for musc1 in musc1 {
+  print(musc1)
+}
+
+struct prismarectangular{
+  var largo : Double
+  var ancho : Double
+  var altura : Double
+
+  func volumen() -> Double{
+  return largo * ancho * altura
+  }
+}
+var rect1 = prismarectangular (largo : 5, ancho: 6, altura : 8)
+print ("El volumén del prisma resctangúlar es: \(rect1.volumen()) cm^3")

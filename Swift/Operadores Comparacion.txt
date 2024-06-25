@@ -1,0 +1,135 @@
+//Operadores de comparación (Código de Jorge Manuel )
+//Mayor que
+var uno : Float = 5.56
+var dos : Float = 3.57
+var tres : Float = 2.65
+var st1 : String = "Casa"
+var st2 : String = "cama"
+var st3 : String = "Taco"
+var st4 : String = "Perro"
+var st5 : String = "Camisa"
+print("Dato una es mayor que tres: \(uno > tres)")
+var mayorque : Bool = tres > dos 
+print(mayorque)
+//Menor que
+print("")
+var menorque: Bool = st2 < st1
+print(menorque)
+print("tres es menor que dos: \(tres < dos)")
+var comprcn = st1 < st2 //st1 es b y st2 es c
+print(comprcn)
+//mayor o igual
+print("")
+print("dos es mayor o igual que uno: \(dos >= uno)")
+var mayoroigual : Bool = st2 >= st1
+print(mayoroigual)
+//menor o igual (<=)
+print("")
+var menorOigual : Bool = st2 <= st3 //st2 = cama st3 = Taco
+print(menorOigual)
+print("tres es menor o igual que uno:  \(tres <= uno)")
+print("st2 es menor o igual que st1: \(st2 <= st1)")
+//igual que (==)
+print("")
+print("tres == uno: \(tres == uno)")
+var juan : Float = 57.5
+var pedro : Float = 57.5
+print("Juan pesa lo mismo que Pedro? \(juan == pedro)")
+/*
+Colecciones de Datos
+Array: Colecciones de valores ordenados.
+Set: Colecciones no ordenadas.
+La diferencia entre un arreglo y un conjunto recide en el orden de los valores dados y que en los diccionario el valor es único.
+
+Si se crea un array, un set o un dictionary, y asignamos a una variable, la colección que se crea será mutable, es decir; puede cambiar.
+Si se asigna un array, un set o un dictionary a una constante, la colección será inmutable, y su tamaño y contenido no se podrán cambiar.
+*/
+
+// Array Arreglos
+//arreglo vacios
+// Veremos dos formas de asignación de hacer arreglos 
+var arreglo1: [String] = []
+var arreglo2: [Int] = []
+
+var arregloVa1 = [Int]()
+var arregloVa2 = [String]()
+var arregloVa3 = [Double]()
+var arregloVa4 = [Float]()
+var arregloVa5 = [Any]()
+// Imprimiendo arreglos vacios de los tipos de datos
+print("Soy un arreglo [Int] \(arregloVa1.count)")
+print("Soy un arreglo [String] \(arregloVa2.count)")
+print("Soy un arreglo [Double] \(arregloVa3.count)")
+print("Soy un arreglo [Float] \(arregloVa4.count)")
+print("Soy un arreglo [Any] \(arregloVa5.count)")
+
+/*
+Swift proporciona dos tipos especiales para trabajar con tipos no específicos:
+Any puede representar una instancia de cualquier tipo, incluidos los tipos de función.
+AnyObject puede representar una instancia de cualquier tipo de clase.
+Utilice Anyy AnyObjectsolo cuando necesite explícitamente el comportamiento y las capacidades que ofrecen. Siempre es mejor ser específico sobre los tipos con los que espera trabajar en su código.
+
+Inicializar: Activar un sistema, trabajo, código o programa. En particular, establecer los valores iniciales de los parámetros y variables antes de su ejecución.
+Iterar: Es realizar.
+Matriz: Ordenación rectangular de elementos algebraicos que pueden sumarse y multiplicarse de varias maneras. En Swift se representa así:
+var  núemros = [1, 2, 3, 4, 5, 6, 7]
+*/
+print ("*************Ejemplo de deunion de arreglo (same)********************")
+var paisesAmerica:[String] = ["México", "Argentina","Chile","Colombia"]
+var paisesEuropa:[String] = ["España","Francia","Finlandia","Grecia","Rumanía"]
+var paisesAll = paisesAmerica + paisesEuropa
+print(paisesAll)
+print ("*************Ejemplo de declaración********************")
+var nombres: [String] = ["Sampieri", "Celerino", "Alicia", "Rosa"]
+print (nombres)
+var edades: [Int] = [50, 40, 45, 55]
+print (edades)
+var dinero: [Float] = [1000.10, 450.50, 900.10, 750.10]
+print (dinero)
+var verdades: [Bool] = [true, false, true, false]
+print (verdades)
+var todo: [Any] = [1, "Hola", true, 15.5]
+print (todo)
+print ("*************Arreglo vacio********************")
+var edad = [Int]()
+var peso = [Float]()
+var nombre = [String]()
+print ("*************posición de arreglos********************")
+print (nombres[0], edades[3],  dinero[0], verdades[1], todo[1])
+print ("*************Propiedades en Array********************")
+//Las propiedades de un array ayudan para modificar el contenido dentro de nuestro array con el que trabajaremos
+print("elnúmero de nombres dentro de la variable nombres son: \(nombres.count)")//Regresa el número de valores existentes dentro del array
+print("el arreglo nos arroja un valor booleano \(nombres.isEmpty) cuando el arreglo no está vacio")//Identifica si el arreglo: ¿Esta vacio?
+print("el arreglo nos arroja un valor booleano \(!nombres.isEmpty) cuando el arreglo no está vacio")//Si lo que queremos saber es: ¿el arreglo tiene algo?
+print ("*************.append********************")
+//Agrega un elemento ya definido
+print(dinero)
+dinero.append(40) //El elemento agregado lo coloca al final de nuestro arreglo
+print(dinero)
+print(nombres)
+nombres.append("Luis ")
+print(nombres)
+print ("*************Posición********************")
+//.first
+print(edades.first)
+//.last
+print(edades.last)
+//.max y .min = se usa para marcar un rango con valor mínimo o máximo. 
+print(dinero)
+dinero.min()
+dinero.max()
+//.remove
+print(dinero)
+dinero.removeLast()
+print (dinero)
+//.removeAll
+print(paisesAll)
+paisesAll.removeAll()
+print(paisesAll)
+print("*************Array bidimensional********************")
+//var/ let nombre_array: [[Tipo_dato]]=[[valor2, valor2, valor3], [valor1, valor2, valor3], [valor1, valor2, valor3]]
+var zoolo: [[String]] = [["León ,", "Tigre ,", "Leopardo ,"], ["Gorila ,", "Simio ,", "Mandril ,"]]
+print (zoolo)
+print (zoolo[1][1])
+print (zoolo[0])
+print (zoolo[1])

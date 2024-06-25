@@ -1,0 +1,22 @@
+let cosaConstante: Float = 3.5 //crear una constaste
+var test: Float = 2.4 
+var suma: Float = cosaConstante + test
+print(suma)
+print("La suma es: ",suma)
+
+var hey: String = "código"
+var ya: String = "Hola, "
+print(ya,hey) 
+
+var num1=3, num2=4
+let multi = num1*num2
+print("La multiplicación es ", multi)
+
+var v=1, b=55, c=4
+let suma2 = v + b + c
+print(suma2)
+
+var h: Double = 56.5
+var e: Int = 2
+let div: Int = Int(h)/e
+print(div)

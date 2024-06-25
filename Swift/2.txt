@@ -1,0 +1,103 @@
+//bloques de decision// (Rocio, 2020)
+print("\n")
+print("claificación")
+let calificacion : Int = 7
+if calificacion > 6 {
+  print ("Aprobado")
+}
+else{
+  print("Repobrado")
+}
+
+print("\n")
+print("Operador ternario")
+//con operador ternario
+let calificacionOP = 3
+let resultado = calificacionOP >= 5 ? "Aprobado" : "Reprobado"
+print (resultado)
+
+print("\n")
+print("juego estatura con &&")
+let estatura1 = 156
+let estatura2 = 165
+  if estatura1 >= 160 && estatura2 >= 160 { 
+
+  print("Ambos suben al juego")
+}
+else if estatura1 <= 160 && estatura2 <= 160  {
+   print("Ambos no suben al juego")
+}
+
+else {
+  print("Alguno no cumple la estatura")
+
+  if estatura1 <= 160{
+    print("El primero no cumple la estatura")
+  }
+
+  if estatura2 <= 160{
+    print("El segundo no cumple la estatura")
+  }
+}
+ //ejemplo de imc//
+print("\n")
+print("ejemplo de imc")
+ let kilos : Double = 51
+ let est : Double = 1.68
+ var imc = Double (kilos / (est * est))
+ print("Tu IMC es ",imc)
+
+ if imc >= 18.5 && imc <= 24.9 {
+   print("Tu indice de masa es normal")
+ }
+
+ else if imc < 18.5 {
+   print("Tu indice de mesa es bajo")
+ }
+
+ else if imc >= 25 && imc <= 29 {
+   print("Tu indice de masa marca sobrepeso")
+ }
+
+
+//abandonar el curso//
+print("\n")
+print("¿eres lalo?")
+let nombre = "lalo"
+if nombre != "lalo" {
+print("no eres lalo")
+}
+else if nombre == "lalo"{
+  print("eres lalo")
+}
+
+var uno : Bool = true
+if uno == false
+{
+  print("no eres lalo")
+}
+else {
+  print("hola lalo")
+}
+
+// Actividad 1: Hacer un código de menos de 5 lineas para hacer la tabla del 10, usando cocatenación y for.
+// Actividad 2: Elaborar un IF ELSE ANIDADO y explicar ¿qué hace su código?
+
+
+
+
+
+
+
+
+
+
+
+
+print ("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
+//Bucle While 
+print("tabla del 10")
+for x in 1...10{
+  print("\(x) X 10 es \(x * 10)")
+}
+print ("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")

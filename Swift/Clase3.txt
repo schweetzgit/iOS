@@ -1,0 +1,114 @@
+// Operadores de comparación
+
+// Mayor que
+var num1 : Float = 15.63
+var num2 : Float = 6.3
+var num3 : Float = 45.2
+var st1 : String = "A"
+var st2 : String = "a"
+
+print("\nMayor que")
+print("Dato num1 es mayor que num2: \(num1 > num2)")
+var mayorque : Bool = num1 > num2
+print(mayorque)
+
+print("st1 es mayor que st2: \(st1 > st2)")
+var mayorst : Bool = st1 > st2
+print(mayorst)
+
+//Menor que
+print("\nMenor que")
+print("num2 es menor que num3: \(num2 < num3)")
+var menorque : Bool = (num2 < num3)
+print(menorque)
+
+print("\nst1 es menor que st2: \(st1 < st2)")
+var menorst : Bool = st1 < st2
+print(menorst) 
+
+print(st1 < st2) // st1 = A   y  st2 = a
+
+var st3 : String = "c"
+var st4 : String = "b"
+print(st3 < st4)
+
+//Mayor Igual
+print("\nMayor Igual")
+print("num2 es mayor o igual que num3: \(num2 >= num3)") // num2 = 6.3  y  num3 = 42.5
+
+var st5 : String = "helicoptero"
+var st6 : String = "flor"
+var mag : Bool = ( st5 >= st6)
+print(mag)
+
+//Menor Igual
+print("\nMenor igual")
+print("num3 es menor o igual a num1: \(num3 <= num1)")  // num3 = 42.5  y num1 = 15.63
+var meg : Bool = (st5 <= st6)
+print(meg) 
+
+//Igual que
+print("\nIgual Que")
+var num4 : Float = 15.6
+var num5 : Float = 15.6
+print("num4 y num5 son iguales: \(num4 == num5)")
+print(num1 == num3) // num1 = 15.63  y  num3 = 42.5
+
+// Distinto que  !=
+print("\nDistinto Que")
+print("num4 es distinto a num5: \(num4 != num5)")
+print("num5 es distinto a num1: \(num5 != num1)")
+
+var st7 : String = "Perro"
+var st8 : String = "Gato"
+print("Perro es distinto que gato: \(st7 != st8)") 
+
+//ARREGLOS
+print("\n----------  ARREGLOS  ----------\n")
+
+// arreglos vacios
+var arreglo : [Int] = []
+var arreglo1 : [Int] = []
+var nombres : [String] = ["Andres", "Juan", "Ximena", "Fernando", "Mariana"]
+var arreglo2 : [Int] = [1, 2, 3, 4, 5]
+var arreglo3 : [Float] = [2.5, 6.3, 8.4, 6.3, 45.6]
+var arreglo4 : [Bool] = [true, false]
+
+
+//Propiedades de los arreglos
+//.count regresar valores existentes dentro del arreglo
+print(nombres)
+print(nombres.count)
+
+//.append agregarle algo más al arreglo
+nombres.append("Sofia")
+print(nombres)
+
+//.first primer dato
+print("\n\(nombres.first)")
+
+//.last último dato
+print(nombres.last)
+
+//.min  valor minimo  y  .max  valor maximo
+print(nombres.min)
+print(nombres.max)
+nombres.max()
+nombres.min()
+
+//.remove  quitar un dato del arreglo First, Last, All
+print(arreglo2)
+arreglo2.removeFirst()
+print(arreglo2)
+arreglo2.removeLast()
+print(arreglo2)
+
+// Solo un elemento del arreglo, desde el 0...
+print(nombres[3])
+print(nombres[5])
+
+//Arreglos de más de una dimensión
+var zoo : [[String]] = [["mamiferos", "reptiles", "aves"], ["elefante", "víbora", "avestruz"]]
+print(zoo[1])
+print(zoo[0][0])  //primer elemento del arreglo
+print(zoo[0].first)  //con una propiedad de los arreglos

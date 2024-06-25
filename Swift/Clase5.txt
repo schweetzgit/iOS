@@ -1,0 +1,92 @@
+// Condicional IF, verificar una condición
+var t : Bool = true
+var f : Bool = false
+
+if t == true { //unica manera de condicionar un Booleano con un valor, diferente a true o false (if)
+  print("1")
+}  
+if f == false {
+  print("0")
+}
+
+// Operadores lógicos booleanos (true o false), regresan valor booleano
+
+// NOT ! Invierte un valor booleano donde un valor verdadero se vuelve falso y viceversa
+let entper : Bool = false  
+if !entper {   //solo imprime cuando el valor final es verdadero
+  print("\nAcceso permitido")
+}
+
+// AND && Genera un valor verdadero, cuando ambos valores son verdaderos, en otros casos siempre será falso
+if (56 >= 13) && (56 >= 13){  //solo cuando los dos son verdaeros imprime, si son falsos no imprime
+  print("AND es verdadero") 
+}
+
+// OR || Solo uno de los valores tiene que ser verdadero para generar un valor verdadero
+if (5 <= 10) || (56 <= 15){
+  print("OR es verdadero\n")
+}
+
+
+// FOR - IN Se usa para repetir una sentencia (caracteres de una cadena, elementos de una matriz, etc.) *Bucle*
+var i = " "
+var j = "@"
+var n = 20
+
+for i in 1..<n {
+  for j in 0..<n {   // 1... hasta n
+  if (i == j || i+j == n+1) {
+   print("@", terminator : "")
+  }
+  else{ 
+   print(" ", terminator : "") //indicar un salto de linea, imprimir un espacio vacío
+  }
+ }
+ print("")
+}
+
+var rep = 10 // largo de la pirámide
+var imp = "♥"
+var esp = " "
+for piramide in 1...rep { // ancho
+  for _ in 0..<(-piramide+rep) {  // _ for distinto, pertenece a piramide
+    print(esp, terminator : "")
+  } 
+
+  for _ in 0..<(piramide+(piramide-1)) { // largo
+    print(imp, terminator : "")
+  }
+  print(" ")
+}
+
+
+// WHILE Se declara un omjunto de declaraciones hasta que una condición se convierta en false
+
+var nivelA = 1, nivelU = 50 
+let fin = true
+
+while (nivelA <= nivelU) {
+  if (fin) {
+    print("Haz pasado el nivel \(nivelA)")
+    nivelA += 1  //despues analizar la siguiente hasta que se cumpla la condición
+  } 
+} 
+print("¡Felicidades! Has acabado el juego")
+
+// Complemento de While (repeat)
+repeat  {
+  if (fin) {
+    print("\nNivel \(nivelA) superado")
+    nivelA += 1  //despues analizar la siguiente hasta que se cumpla la condición
+  }
+}    
+while (nivelA <= nivelU)
+print("¡Felicidades! Has acabado el juego")
+
+/*Operadores Relacionales	Descripción
+<	Evalúa si el número de la izquierda es más pequeño que el número a la derecha.
+<=	Evalúa si el número de la izquierda es más pequeño o igual al número a la derecha.
+>	Evalúa si el número de la izquierda es mayor al número a la derecha.
+>=	Evalúa si el número de la izquierda es mayor o igual al número a la derecha.
+==	Evalúa si el número de la izquierda es igual al número a la derecha.
+!=	Evalúa si el número de la izquierda no es igual al número a la derecha*/

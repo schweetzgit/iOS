@@ -1,0 +1,40 @@
+print ("\n*****uso del break(Swiftbycoding, 2020)*****")
+//La palabra clave break nos permite interrumpir la ejecución de cualquier bucle, ya sea un for in, un while o un repeat while.
+var ourHealthLevel = 100
+var enemyHealthLevel = 100
+var attackPower = 0
+
+while enemyHealthLevel > 1 {
+    attackPower = Int.random(in: 5...50)
+    ourHealthLevel -= attackPower
+    print("😈 ⚔️ (\(attackPower)%) - Has sufrido un ataque! 😰 \(ourHealthLevel)% ❤️")
+    
+    if ourHealthLevel < 1 { 
+        break
+    } // if
+    
+    attackPower = Int.random(in: 5...50)
+    enemyHealthLevel -= attackPower
+    print("😁 ⚔️ (\(attackPower)%) - Has atacado al enemigo! 👿 \(enemyHealthLevel)% ❤️")
+} // while
+
+if ourHealthLevel > 1 {
+    print("\n😎 Has ganado la pela! 👿")
+
+} else { 
+    print("\n😈 Has perdido la pelea! 😵")
+    
+}
+
+print ("\n*****uso del continue (Swiftbycoding, 2020)*****")
+//La instrucción continue interrumpe la ejecución del ciclo actual del bucle, ya sea un for in, un while o un repeat while. Pero a diferencia de break el bucle continua su ejecución al comienzo de la siguiente iteración. Veamos un ejemplo:
+//Continue, impares
+for numero in 1...20 {
+    if numero.isMultiple(of: 2) {
+        continue//imprime la impresión de for in y por ello no imprime los números pares o multiplos de dos
+    } // if
+    print(numero)
+    
+} // for in
+
+//Referencias: Swift. (2020). De sitio web: https://swiftbycoding.dev/swift/control-de-flujo/

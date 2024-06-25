@@ -1,0 +1,47 @@
+//IF ELSE anidado: sus componentes son IF, ELSE IF y ELSE
+
+var calificacion = 11
+//Asignamos una variable o constante, ojo, todo lo que esté dentro de las LLAVES "{}", forma parte de un conjunto, por tanto pertenece a una propiedad más de la variable
+
+  if calificacion > 5 && calificacion <= 10 {
+	print("Tu calificación es aprobatoria")
+}
+// Utilizamos ampersand "&&" caundo estamos asignando 2 condiciones, es decir; eneste caso estamos diciendo que sea mayor a 5, pero menor de 10
+  else if (calificacion <= 5) {
+	print("Estás reprobado, esfuerzate más")
+}
+// La sintaxis indica que debe de esbribirse el signo de menor que, antes el signo de igualdad debido a que estamos diciendo que es menor que o igual que 5
+  else {
+	print("No entra en el rango de calificación, intentalo de nuevo")
+}
+//La estructura de el IF ELSE ANIDADO es, en el siguiente orden: IF{}, ELSE IF{}, ELSE{}
+print ("El consejo que le puedo dar es:")
+
+//SWITCH: Los componentes de SWITCH {CASE, DEFAULT}
+  switch calificacion {
+
+case 1 ... 5:
+  print ("Entra a clase más seguido y pon atención")
+  //En este caso usamos la puntuación para indicar una sucesión, ojo, no podemos colocar una condición de mayor que o menor que debido a que nos daría un error en la sintáxis
+case 6, 7 :
+  print("Debes esforzarte un poco más, participa en clase y haz tareas")
+  //La coma, indica que el rango incluye a el valor anterior y psterior a la coma ","
+case 8, 9 :
+  print ("Tus esfuerzos reflejan el resultado")
+  //No es necesario poner más case, a excepción que el usuario así quiera hacerlo
+case 10:
+  print ("Sigue así, llenas de orgullo a tu nación")
+ default:
+  //Indíca que los valores de SWITCH ya están establecidos, y es momento de dar un mensaje cuado no se cumpla niguna condición de los casos
+  print ("Favor de revsiar calificación con el asesor")
+
+} 
+print ("\n")
+
+for i in 1...10 {
+  if i % 4 == 0 || i % 5 == 0 {
+    print("\(i) Cumple con las condiciones")
+  } else {
+    print("\(i) No nos sirve")
+  }
+}

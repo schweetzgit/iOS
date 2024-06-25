@@ -1,0 +1,88 @@
+// Diccionario
+var vacio : [Int : Float] = [:]
+var dvacio1 = Dictionary <String, Int>()
+var dvacio2 = [Int : String]() // con [] simpre arroja valor
+print(dvacio1, dvacio2)
+
+// Diccionario que no puede ser modificado por la declaración de let en vez de var 
+let dicc1: Dictionary <String, String> = ["T" : "Tacos","A" : "Agua"]
+print(dicc1)
+
+// Diccionario añadiendo valores, introducir valores de diferente tipo
+var dicc2 = ["Taco" : 15, "Agua" : 23.5, "Postre" : 30] as [String : Any]
+print(dicc2)
+var tacos = ["Taco" : 18.5, "Agua" : 16, "Postre" : 20] as [String : Float]
+print(tacos)
+/*var tacoAny = ["Taco": 20, "Agua": 21.5, "Postre": 16] as [Any : Any]
+print(tacoAny)*/
+
+// Acceder y modificar un Diccionario
+var dicc3 : [String : Any] = ["Animales" : "Mascotas", "Perros" : 1, "Gatos" :  "Europeo Domestico", "Pajaros" : "Canarios"]
+print(dicc3)
+
+// Aplicacion del for para imprimir el valor del diccionario
+for (Comida, Precio) in dicc2 
+{
+  print("El \(Comida), tiene un precio de \(Precio)")
+}
+
+dicc2 ["Taco"] = 15352.569 // Modificar 0
+for (Comida, Precio) in dicc2 
+{
+  print("El \(Comida), tiene un precio de \(Precio)")
+} 
+
+dicc2 ["Agua"] = 23256 // Modificar 1
+for (Comida, Precio) in dicc2 
+{
+  print("El \(Comida), tiene un precio de \(Precio)")
+} 
+
+dicc2 ["Postre"] = 158.634 // Modificar 2
+for (Comida, Precio) in dicc2 
+{
+  print("El \(Comida), tiene un precio de \(Precio)")
+} 
+
+var fruta : Set = ["Fresa", "Pera", "Manzana", "Uva", "Durazano"]
+print("El numero de frutas que tenemos es: \(fruta.count)") // Contar el numero de datos en el arreglo
+print("Imprimiendo la colección de datos de un set")
+for (contar) in fruta
+{
+ print(contar) 
+}
+
+// Agregar valores
+fruta.insert("Piña")
+print(fruta)
+
+if let rem = fruta.remove("Uva")
+{
+ print("Se ha eliminado a: \(rem)") 
+}
+print(fruta)
+fruta.removeAll()  // Eliminar los elementos
+print(fruta)
+
+//Tuplas, imprimir cualquier tipo, funcionan como datos independientes, con palabras reservadas
+let any = ("Pan", "Reloj", "Lápiz")
+print("Tupla con valores \(any)")
+print("Posición cero: \(any.0)")
+print("Posición uno: \(any.1)")
+print("Posición dos: \(any.2)")
+let reany = (Pan : "Bolillo", Bebida : "Café", Tamal : "Verde")//renombrar
+print("X: \(reany.Bebida)")
+print("X: \(reany.Pan)")
+
+let tup = ("Pan", "Agua" , "Alcohol")
+print("Tupla: \(tup)")
+print("Elemento 0: \(tup.0)")
+print("Elemento 1: \(tup.1)")
+print("Elemento 2: \(tup.2)")
+let tupp = (Pan : "bolillo", Bebida : "Leche", Tamal : "Verde")
+print("X: \(tupp.Bebida)")
+print("X: \(tupp.Pan)")
+
+//descomponer una dupla 
+var tup2 = (Nombre : "Lina", Edad : 18)
+let (Nombre, Edad) = tup2

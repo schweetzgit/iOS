@@ -1,0 +1,44 @@
+// Funciones
+
+// No recibe, parametros y no regresa nada, vacía
+func vacia(){
+  var num1 = 1
+  var num2 = 5
+
+  if num1 == num2{
+    print("El primer número y el segundo son iguales")
+  }
+  else{
+    print("Los numeros no son iguales")
+  }
+}
+vacia()
+print("")
+// Warning no tiene parametro de entrada y de salida
+
+//Funcion con parametros
+func saludo (nombre : String, apellido : String){
+  print ("Hola \(nombre) \(apellido)")
+}  
+saludo (nombre : "Alexis", apellido : "Servin")
+saludo (nombre : "Carolina", apellido : "Colunga")
+
+//Funcion donde se usan dos nombres como parametros
+func despedida ( _ nombre : String, _ apellido : String){
+  print ("Adios \(nombre) \(apellido)")
+}
+despedida ("Daniel","Rodríguez")
+
+//funcion que regresa algo
+func comida() -> String {
+  var comida1 = "Pasta"
+  return comida1
+}
+let comida2 = comida()
+print (comida2)
+
+func area (base : Float, altura : Float) -> Float {
+  var area1 = base * altura
+  return area1
+}
+print ("El área es \(area(base : 15.3, altura : 15.3))")

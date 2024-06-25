@@ -1,0 +1,217 @@
+/*1.- Elabora un Switch que simule ser un código que te da calificaciones y te imprima en pantalla una breve justificación de por qué sacaste esa calificación, para cada uno de los siguientes casos:
+
+a) para el caso de tener calificación igual o menor a 5.
+b) para el caso de tener calificación de 6 o 7.
+c) para el caso de tener una calificación de 8.
+d) para el caso de tener una calificación de 9.
+e) para el caso de tener una calificaión de 10.
+f) para el caso de tener una calificación fuera de los rangos anteiormente enunciados (0-10).*/
+
+print("__________CASE__________")
+
+var calif : Int = 5
+switch calif {
+  case 0...5 : print("No has alcanzado una calificación aprobatoria, esfuerzate más para lograrlo")
+  case 6,7 : print("Has aprobado, sin embargo no te conformes con esta calificación")
+  case 8 : print("Bien, aprobaste, pero no estaría mal una calificación más alta ")
+  case 9 : print("¡Genial! Hiciste tu mejor esfuerzo")
+  case 10 : print("Excelente, has dejado sin palabras a todos")
+  default : print("Las calificación deben ser en un rango de 0 a 10")
+}
+ 
+/*2.- Elaborar un código que contenga tu lista de canciones, y cada que corras el código te imprima en pantalla tu lista de canciones, en orden aleatorio. Tu código debe de tener las siguientes especificaciones:
+
+a) Tu lista de música debe de contener al menos 2 conjuntos, con 4 canciones cada conjunto, pueden ser más, no pueden ser menos (en total deberás tener 8 canciones, o más).
+b) Imprimirás en pantalla tus dos conjuntos de música, mostrando tus 8 canciones distribuidas en dos agrupaciones diferentes.
+b) Tu lista de música deberá de agregar un nuevo elemento a una de tus dos agrupaciones de canciones de tu código. Luego imprimirás el conjunto de datos ya con el elemento nuevo incorporado.
+c) Tu lista de música deberá de remover una canción que no sea la que hayas agregado en el paso anterior, y deberás de imprimir en pantalla solamente el conjunto donde removiste la cancion.
+d) De tu lista de música, seleccionarás tu canción favorita y la imprimirás en tu código, concatenando lo siguiente... "mi canción favorita es : \(cancionFav)".*/
+
+print("\n__________SET__________")
+
+var musc1 : Set = ["Better Me", "Fancy", "Error", "Loney", "I Can´t Stop Me", "Hell In Heaven", "Movie"]
+var musc2 : Set = ["Wings", "To Be Or Not To Be", "The Chaser","Strawberry", "Only You", "Sorry", "My Beauty"]
+
+print("\n*1er Conjunto*")
+for (contar) in musc1 {
+  print(contar)
+}
+print("\n*2do Conjunto*")
+for (contar2) in musc2{
+  print(contar2) 
+}
+
+print("\n*Primera lista con elemento añadido*")
+print("Se ha añadido: Back Door")
+musc1.insert("Back Door")
+for (contar3) in musc1 {
+  print(contar3)
+}
+
+print("\n*Elemiento eliminado*")
+if let rem = musc1.remove ("Error"){
+ print("Se ha eliminado a: \(rem)") 
+}
+for (rem) in musc1{
+ print(rem) 
+}
+
+print ("\nMi canción favorita es \("Fancy")")
+
+
+/*3.- Elabora un código que tenga "function" y te permita calcular el área, el perímetro y el volumen de un rectangulo. El código debe cumplir con lo siguiente:
+*Deberá tener func
+*Deberá tener return
+*Usar struct
+*Usar tipo de dato "Double" 
+Nota: Usa las variables que consideres necesarias
+*Finalmente, alguno de los resultados, ya sea el área, el volumen o el perímetro deberás de convertirlo a tipo de dato Int.*/
+
+print("\n__________FUNCION__________")
+struct rectangulo{
+  var base : Double
+  var altura : Double
+
+  func area() -> Double{
+    return base * altura
+  }
+  func perimetro() -> Double{
+    return (base*2) + (altura*2)
+  }
+}
+var rect1 = rectangulo (base : 10.15, altura : 19.6)
+print ("El área es: \(rect1.area()) cm^2")
+print ("El périmeto es: \(rect1.perimetro()) cm")
+
+struct prismarectangular{
+  var largo : Double
+  var ancho : Double
+  var altura : Double
+
+  func volumen() -> Double{
+  return largo * ancho * altura
+  }
+}
+var rect2 = prismarectangular (largo : 5, ancho: 6, altura : 8)
+print ("\nEl volumén del prisma resctangúlar es: \(rect2.volumen()) cm^3")
+
+
+
+print("\n*Conversión de área de tipo de dato INT*")
+var arentero : Int = Int (rect1.area())
+print("El área en numeros enteros es: \(arentero) cm^2")
+ 
+/*4.- Realiza una numeración del 1 al 100 en tu código, donde no te imprima todos los números múltiplos de 3, y que en caso de tener un número 50 la númeración se detenga o rompa el proceso (solo imprime números no multiplos de 3 y menores a 50 en un rango de datos del 1-100). El código debe contener:
+*Uso de "break"
+*Uso de "continue"
+*Uso de "for in"*/
+
+print("\n__________BREAK, CONTINUE, FOR__________")
+
+for numero in 1...100{
+  if numero.isMultiple(of: 3) {
+    continue
+  } 
+  print(numero)
+  if numero == 50 {
+    break
+  }
+}
+
+/*5.- Realiza un código donde utilices el mayor número de temas posibles y vistos en clase, para que el ejercicio se considere válido deberá de tener mínimo 4 temas de clase. Los temas válidos son los siguientes:
+
+a)Concatenación.
+b)Conversión de tipo de datos.
+c)Colecciones de datos: arreglos, conjuntos o diccionario.
+d)Break y continue.
+e)Tupla.
+f)Manejo de operadores, como el ternario.
+g)Bucles: for, while, repeat – while o switch (case).
+h)Funciones.
+Nota: El que logre integrar 7 u 8 temas de manera correcta tendrá +2 puntos de calificación final.*/
+
+print("\n__________TEMAS__________")
+print("Recopila diversos datos")
+
+var mes : Int = 11
+var dia : Int = 21
+var año : Int = 2001
+
+func hola (nombre : String, apellido : String){
+  print ("\nHola \(nombre) \(apellido) \nProcesando datos...")
+}
+hola (nombre : "Carolina", apellido : "Colunga") 
+
+print("Su fecha de naciemiento es el \(dia) de noviembre de \(año)")
+
+switch mes{
+  case 1 : print ("Además de su cumpleaños se celebra el día del periodista; 4 de enero")
+  case 2 : print ("Además de su cumpleaños se celebra San Valentin; 14 de febrero")
+  case 3 : print ("Además de su cumpleaños se celebra el día internacional de la Felicidad; 20 de marzo")
+  case 4 : print ("Además de su cumpleaños se celebra el día munidal del arte; 15 de abril")
+  case 5 : print ("Además de su cumpleaños se celebra el día munial sin tabaco; 31 de mayo")
+  case 6 : print ("Además de su cumpleaños se celebra el día mundial del Medio Ambiente; 5 de junio")
+  case 7 : print ("Además de su cumpleaños se celebra el día de la Policia Federal; 13 de julio")
+  case 8 : print ("Además de su cumpleaños se celebra el día internacional de la juventud; 12 de agosto")
+  case 9 : print ("Además de su cumpleaños se celebra el día internacional de la paz; 21 de septiembre")
+  case 10 : print ("Además de su cumpleaños se celebra el día internacional del café; 1 de octubre")
+  case 11 : print ("Además de su cumpleaños se celebra la Revolución Mexicana; 20 de noviembre")
+  case 12 : print ("Además de su cumpleaños se celebra el día mundial de la lucha contra el sida; 1 de diciembre")
+  default: print ("Solo hay 12 meses")
+}
+print("\nTiene \(2020-año) años")
+if año <= 2002 {
+  print ("Ya es mayor de edad")
+}
+else{
+  print ("Aún no puede votar")
+}
+
+var materias : [String] = ["Álgebra Superior", "Lógica matemática", "Programación I", "Organización de computadoras", "Solución algorítmica de problemas", "Cálculo I"]
+
+print("\nAcutualmente cursa \(materias.count) materias")
+print("De las cuales \(materias[0]) y \(materias[1])son las más complicadas para usted")
+
+var alg : Float = 6.45
+var redalg : Int = Int (alg)
+print("\nSu promedio actual en \(materias[0]) es de \(alg), equivalente a \(redalg)")
+
+var estudiar : Bool = true
+var buenanota : Bool = true
+if estudiar && buenanota {   
+  print("Si estudia y se toma el tiempo para entender los temas entonces obtendrá una buena nota")
+}
+else{
+  print("Si no estudia, no obtendrá buena nota")
+}
+
+print ("\nHoras de estudio al día: ")
+for horas in 1...24{
+  if horas >= 19{
+    break
+  }
+  print(horas)
+}
+print("Estudiar o hacer tareas por algun tiempo seguido tampoco es bueno, descanse un poco")
+
+print("\nTiempo de descanso al día (dormir):")
+for horas2 in 1...24{
+ if horas2 >= 6 {
+  continue
+ } 
+ print(horas2)
+}
+print("Dormir y comer es lo más importante, trate de dormir un poco más")
+
+var comida = ("Frutas", "Verduas", "Agua", "Cereales", "Carne")
+print("\nAlimentese con por lo menos estos tipos de alimentos")
+print(comida.0)
+print(comida.1)
+print(comida.2)
+print(comida.3)
+print(comida.4)
+
+func adios (nombre : String, apellido : String){
+  print ("\nHasta la proxima \(nombre) \(apellido)")
+}
+adios (nombre : "Carolina", apellido : "Colunga") 

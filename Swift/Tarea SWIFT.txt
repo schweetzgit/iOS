@@ -1,0 +1,15 @@
+// Ejercicio de SWITCH con al menos 4 casos
+
+var ph : Int = 7
+
+
+switch ph {
+  
+  case 0 ... 2 : print("Es un ácido fuerte")
+  case 3 ... 6 : print("Es un ácido débil")
+  case 7 : print("Tiene ph neutro")
+  case 8 ... 11 : print("Es una base débil")
+  case 12 ... 14 : print("Es una base fuerte")
+
+  default : print ("No se encuentra dentro de la escala de ph")
+}

@@ -1,0 +1,54 @@
+//Var SALUDO: String = Bienvendios a PWR CODE
+
+//Constantes: representadas por " let " su valor no se puede reasignar
+let cosa: String = "Hola" //Ejemplo de comentario corto: Bienvenidos a PWR CODE
+let cosa2: Float = 3.14
+let cosa3: Bool = true //Admite valores binarios
+let cosa4: Double = 3.14159265
+let cosa5: Int = 23
+//Variables: representada por " var " su valor pude reasignarse
+var cosA: String = "Bienvendio a PWR CODE" //Al llamarle " cosA " a nuestra variable estamos usando un "Camel case"
+var cosA2: Float = 2.11
+var cosA3: Bool = false
+var cosA4: Double = 3.14159265
+var cosA5: Int = 23
+var cualquierDato: Any = "true"// Any: acepta cualquier tipo de dato
+/*Este es un ejemplo de un comentario de más de una linea...
+1.- Se utiliza "  /*  " para abrir el comentario...
+2.- Se utiliza "  */  " para cerrar el comentario...
+3.- Todo lo que esté dentro del rango de nuestro comentario no afectará la ejecución de nuestro código, tampóco estará impreso en la consola
+*/
+print (cosa,cosa2,cosa3,cosa4,cosa5)//Impresión de constantes
+print (cosA,cosA2,cosA3,cosA4,cosA5,cualquierDato)//Impresión de variables
+//Print nos sirve para mandar a imprimir nuestro código en la consola
+  print("*_*_*_*_*_*_*_*(operaciones báasicas)_*_*_*_*_*_*_*_*_")
+
+ var suma: Double = cosa4 + cosA4
+ var multi: Double = cosa4 + cosA4
+ var div: Double = cosa4 + cosA4
+ var resta: Double = cosa4 + cosA4
+
+//Concatenar
+ print("Tu suma es: \(suma)")
+ print("Tu multiplicaciòn es: \(multi)")
+ print("Tu division es: \(div)")
+ print("Tu resta es: \(resta)")
+
+
+  print("*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_")
+//Este es un ejemplo de como convertir un tipo de dato
+var num1: Int = 15
+var num2: Double = 30.5
+var sumA: Int = Int(num2) + num1
+print("Tu suma en enteros es: \(sumA)")
+
+var sumA2 = 4 + 1578.56
+print ("suma de dos valores impícitos : \(sumA2)")
+  print("*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_")
+//Esto no vendrá en el exámen (lineas 45-54), pero por si tenían curiosidad igual les mando un ejemplo.
+var entero: UInt8 = 55
+print (entero)
+//números enteros de 8 bits sin signo
+var unidad: Int8 = 55
+print (unidad)
+//utiliza más espacio de disco que INTEGER*/
