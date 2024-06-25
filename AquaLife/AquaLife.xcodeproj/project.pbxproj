@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E0A158A2B1051E9002DB2BF /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A15892B1051E9002DB2BF /* InfoViewController.swift */; };
+		3E0A15902B1068BE002DB2BF /* EnlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A158F2B1068BE002DB2BF /* EnlaceViewController.swift */; };
+		3E0A15962B1074C0002DB2BF /* CuentaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A15952B1074C0002DB2BF /* CuentaViewController.swift */; };
+		3E1D68152B0A8F80003AA813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1D68142B0A8F80003AA813 /* AppDelegate.swift */; };
+		3E1D68172B0A8F80003AA813 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1D68162B0A8F80003AA813 /* SceneDelegate.swift */; };
+		3E1D68192B0A8F80003AA813 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1D68182B0A8F80003AA813 /* ViewController.swift */; };
+		3E1D681C2B0A8F80003AA813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E1D681A2B0A8F80003AA813 /* Main.storyboard */; };
+		3E1D681E2B0A8F82003AA813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E1D681D2B0A8F82003AA813 /* Assets.xcassets */; };
+		3E1D68212B0A8F82003AA813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E1D681F2B0A8F82003AA813 /* LaunchScreen.storyboard */; };
+		3E1D682C2B0A8F83003AA813 /* AquaLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1D682B2B0A8F83003AA813 /* AquaLifeTests.swift */; };
+		3E1D68362B0A8F83003AA813 /* AquaLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1D68352B0A8F83003AA813 /* AquaLifeUITests.swift */; };
+		3E1D68382B0A8F83003AA813 /* AquaLifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1D68372B0A8F83003AA813 /* AquaLifeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E1D68282B0A8F82003AA813 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E1D68092B0A8F7F003AA813 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E1D68102B0A8F7F003AA813;
+			remoteInfo = AquaLife;
+		};
+		3E1D68322B0A8F83003AA813 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E1D68092B0A8F7F003AA813 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E1D68102B0A8F7F003AA813;
+			remoteInfo = AquaLife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E0A15892B1051E9002DB2BF /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		3E0A158F2B1068BE002DB2BF /* EnlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnlaceViewController.swift; path = ../EnlaceViewController.swift; sourceTree = "<group>"; };
+		3E0A15952B1074C0002DB2BF /* CuentaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuentaViewController.swift; sourceTree = "<group>"; };
+		3E1D68112B0A8F7F003AA813 /* AquaLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AquaLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E1D68142B0A8F80003AA813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E1D68162B0A8F80003AA813 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3E1D68182B0A8F80003AA813 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E1D681B2B0A8F80003AA813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E1D681D2B0A8F82003AA813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E1D68202B0A8F82003AA813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E1D68222B0A8F82003AA813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E1D68272B0A8F82003AA813 /* AquaLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AquaLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E1D682B2B0A8F83003AA813 /* AquaLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaLifeTests.swift; sourceTree = "<group>"; };
+		3E1D68312B0A8F83003AA813 /* AquaLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AquaLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E1D68352B0A8F83003AA813 /* AquaLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaLifeUITests.swift; sourceTree = "<group>"; };
+		3E1D68372B0A8F83003AA813 /* AquaLifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaLifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E1D680E2B0A8F7F003AA813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E1D68242B0A8F82003AA813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E1D682E2B0A8F83003AA813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E1D68082B0A8F7F003AA813 = {
+			isa = PBXGroup;
+			children = (
+				3E1D68132B0A8F7F003AA813 /* AquaLife */,
+				3E1D682A2B0A8F83003AA813 /* AquaLifeTests */,
+				3E1D68342B0A8F83003AA813 /* AquaLifeUITests */,
+				3E1D68122B0A8F7F003AA813 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E1D68122B0A8F7F003AA813 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E1D68112B0A8F7F003AA813 /* AquaLife.app */,
+				3E1D68272B0A8F82003AA813 /* AquaLifeTests.xctest */,
+				3E1D68312B0A8F83003AA813 /* AquaLifeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E1D68132B0A8F7F003AA813 /* AquaLife */ = {
+			isa = PBXGroup;
+			children = (
+				3E1D68142B0A8F80003AA813 /* AppDelegate.swift */,
+				3E1D68162B0A8F80003AA813 /* SceneDelegate.swift */,
+				3E1D68182B0A8F80003AA813 /* ViewController.swift */,
+				3E1D681A2B0A8F80003AA813 /* Main.storyboard */,
+				3E1D681D2B0A8F82003AA813 /* Assets.xcassets */,
+				3E1D681F2B0A8F82003AA813 /* LaunchScreen.storyboard */,
+				3E1D68222B0A8F82003AA813 /* Info.plist */,
+				3E0A158F2B1068BE002DB2BF /* EnlaceViewController.swift */,
+				3E0A15892B1051E9002DB2BF /* InfoViewController.swift */,
+				3E0A15952B1074C0002DB2BF /* CuentaViewController.swift */,
+			);
+			path = AquaLife;
+			sourceTree = "<group>";
+		};
+		3E1D682A2B0A8F83003AA813 /* AquaLifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E1D682B2B0A8F83003AA813 /* AquaLifeTests.swift */,
+			);
+			path = AquaLifeTests;
+			sourceTree = "<group>";
+		};
+		3E1D68342B0A8F83003AA813 /* AquaLifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E1D68352B0A8F83003AA813 /* AquaLifeUITests.swift */,
+				3E1D68372B0A8F83003AA813 /* AquaLifeUITestsLaunchTests.swift */,
+			);
+			path = AquaLifeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E1D68102B0A8F7F003AA813 /* AquaLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E1D683B2B0A8F83003AA813 /* Build configuration list for PBXNativeTarget "AquaLife" */;
+			buildPhases = (
+				3E1D680D2B0A8F7F003AA813 /* Sources */,
+				3E1D680E2B0A8F7F003AA813 /* Frameworks */,
+				3E1D680F2B0A8F7F003AA813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AquaLife;
+			productName = AquaLife;
+			productReference = 3E1D68112B0A8F7F003AA813 /* AquaLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E1D68262B0A8F82003AA813 /* AquaLifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E1D683E2B0A8F83003AA813 /* Build configuration list for PBXNativeTarget "AquaLifeTests" */;
+			buildPhases = (
+				3E1D68232B0A8F82003AA813 /* Sources */,
+				3E1D68242B0A8F82003AA813 /* Frameworks */,
+				3E1D68252B0A8F82003AA813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E1D68292B0A8F82003AA813 /* PBXTargetDependency */,
+			);
+			name = AquaLifeTests;
+			productName = AquaLifeTests;
+			productReference = 3E1D68272B0A8F82003AA813 /* AquaLifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E1D68302B0A8F83003AA813 /* AquaLifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E1D68412B0A8F83003AA813 /* Build configuration list for PBXNativeTarget "AquaLifeUITests" */;
+			buildPhases = (
+				3E1D682D2B0A8F83003AA813 /* Sources */,
+				3E1D682E2B0A8F83003AA813 /* Frameworks */,
+				3E1D682F2B0A8F83003AA813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E1D68332B0A8F83003AA813 /* PBXTargetDependency */,
+			);
+			name = AquaLifeUITests;
+			productName = AquaLifeUITests;
+			productReference = 3E1D68312B0A8F83003AA813 /* AquaLifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E1D68092B0A8F7F003AA813 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3E1D68102B0A8F7F003AA813 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					3E1D68262B0A8F82003AA813 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3E1D68102B0A8F7F003AA813;
+					};
+					3E1D68302B0A8F83003AA813 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3E1D68102B0A8F7F003AA813;
+					};
+				};
+			};
+			buildConfigurationList = 3E1D680C2B0A8F7F003AA813 /* Build configuration list for PBXProject "AquaLife" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E1D68082B0A8F7F003AA813;
+			productRefGroup = 3E1D68122B0A8F7F003AA813 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E1D68102B0A8F7F003AA813 /* AquaLife */,
+				3E1D68262B0A8F82003AA813 /* AquaLifeTests */,
+				3E1D68302B0A8F83003AA813 /* AquaLifeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E1D680F2B0A8F7F003AA813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1D68212B0A8F82003AA813 /* LaunchScreen.storyboard in Resources */,
+				3E1D681E2B0A8F82003AA813 /* Assets.xcassets in Resources */,
+				3E1D681C2B0A8F80003AA813 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E1D68252B0A8F82003AA813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E1D682F2B0A8F83003AA813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E1D680D2B0A8F7F003AA813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0A15962B1074C0002DB2BF /* CuentaViewController.swift in Sources */,
+				3E0A15902B1068BE002DB2BF /* EnlaceViewController.swift in Sources */,
+				3E1D68192B0A8F80003AA813 /* ViewController.swift in Sources */,
+				3E1D68152B0A8F80003AA813 /* AppDelegate.swift in Sources */,
+				3E0A158A2B1051E9002DB2BF /* InfoViewController.swift in Sources */,
+				3E1D68172B0A8F80003AA813 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E1D68232B0A8F82003AA813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1D682C2B0A8F83003AA813 /* AquaLifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E1D682D2B0A8F83003AA813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1D68382B0A8F83003AA813 /* AquaLifeUITestsLaunchTests.swift in Sources */,
+				3E1D68362B0A8F83003AA813 /* AquaLifeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E1D68292B0A8F82003AA813 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E1D68102B0A8F7F003AA813 /* AquaLife */;
+			targetProxy = 3E1D68282B0A8F82003AA813 /* PBXContainerItemProxy */;
+		};
+		3E1D68332B0A8F83003AA813 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E1D68102B0A8F7F003AA813 /* AquaLife */;
+			targetProxy = 3E1D68322B0A8F83003AA813 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E1D681A2B0A8F80003AA813 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E1D681B2B0A8F80003AA813 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E1D681F2B0A8F82003AA813 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E1D68202B0A8F82003AA813 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E1D68392B0A8F83003AA813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E1D683A2B0A8F83003AA813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E1D683C2B0A8F83003AA813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AquaLife/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AquaLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E1D683D2B0A8F83003AA813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AquaLife/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AquaLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E1D683F2B0A8F83003AA813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AquaLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AquaLife.app/AquaLife";
+			};
+			name = Debug;
+		};
+		3E1D68402B0A8F83003AA813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AquaLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AquaLife.app/AquaLife";
+			};
+			name = Release;
+		};
+		3E1D68422B0A8F83003AA813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AquaLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AquaLife;
+			};
+			name = Debug;
+		};
+		3E1D68432B0A8F83003AA813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AquaLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AquaLife;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E1D680C2B0A8F7F003AA813 /* Build configuration list for PBXProject "AquaLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E1D68392B0A8F83003AA813 /* Debug */,
+				3E1D683A2B0A8F83003AA813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E1D683B2B0A8F83003AA813 /* Build configuration list for PBXNativeTarget "AquaLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E1D683C2B0A8F83003AA813 /* Debug */,
+				3E1D683D2B0A8F83003AA813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E1D683E2B0A8F83003AA813 /* Build configuration list for PBXNativeTarget "AquaLifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E1D683F2B0A8F83003AA813 /* Debug */,
+				3E1D68402B0A8F83003AA813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E1D68412B0A8F83003AA813 /* Build configuration list for PBXNativeTarget "AquaLifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E1D68422B0A8F83003AA813 /* Debug */,
+				3E1D68432B0A8F83003AA813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E1D68092B0A8F7F003AA813 /* Project object */;
+}
